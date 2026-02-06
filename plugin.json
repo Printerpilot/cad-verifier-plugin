@@ -1,0 +1,13 @@
+{
+  "name": "cad-verifier",
+  "version": "1.0.0",
+  "description": "Mathematical verification for CAD geometry. Prevents toothless gears.",
+  "author": "Troy <tkdtroy@gmail.com>",
+  "skills": [{"name": "cad-verifier", "path": "skills/cad-verifier"}],
+  "mcpServers": [{
+    "name": "cad-verifier-mcp",
+    "path": "mcp-servers/cad_verifier_mcp",
+    "command": "python",
+    "args": ["server.py"]
+  }]
+}

@@ -1,11 +1,11 @@
 #!/bin/bash
-# CAD Verifier Plugin Installer
+# Product Engineering Agent (CAD Verifier Plugin) Installer
 # Usage: curl -fsSL https://raw.githubusercontent.com/Printerpilot/cad-verifier-plugin/main/install.sh | bash
 
 set -e
 PLUGIN_DIR="${HOME}/.claude/plugins/cad-verifier-plugin"
 
-echo "🔧 Installing CAD Verifier Plugin..."
+echo "🔧 Installing Product Engineering Agent v2.0.0..."
 mkdir -p "${HOME}/.claude/plugins"
 
 if [ -d "$PLUGIN_DIR" ]; then
@@ -20,6 +20,6 @@ echo "📚 Installing dependencies..."
 pip install mcp --break-system-packages --quiet 2>/dev/null || pip install mcp --quiet 2>/dev/null || true
 
 echo ""
-echo "✅ CAD Verifier Plugin installed!"
+echo "✅ Product Engineering Agent v2.0.0 installed!"
 echo "📍 Location: $PLUGIN_DIR"
 echo "🔄 Restart Cowork to activate."

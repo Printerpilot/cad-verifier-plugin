@@ -1,7 +1,7 @@
 {
-  "name": "cad-verifier",
-  "version": "1.0.0",
-  "description": "Mathematical verification for CAD geometry. Prevents toothless gears.",
+  "name": "product-engineering-agent",
+  "version": "2.0.0",
+  "description": "Product Engineering Agent — Mathematical specs, verified CAD generation, assembly verification, and BOM with vendor pricing.",
   "author": "Troy <tkdtroy@gmail.com>",
   "skills": [{"name": "cad-verifier", "path": "skills/cad-verifier"}],
   "mcpServers": [{

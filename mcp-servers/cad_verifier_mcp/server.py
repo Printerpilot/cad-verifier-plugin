@@ -107,6 +107,10 @@ def generate_bom(items):
             line_total = round(catalog["price_usd"] * weight * qty, 2)
         elif catalog["unit"] == "each":
             line_total = round(catalog["price_usd"] * qty, 2)
+        elif catalog["unit"].startswith("per_"):
+            lot_size = int(catalog["unit"].split("_")[1])
+            lots_needed = math.ceil(qty / lot_size) if qty else 1
+            line_total = round(catalog["price_usd"] * lots_needed, 2)
         else:
             line_total = round(catalog["price_usd"] * qty, 2)
         total += line_total
